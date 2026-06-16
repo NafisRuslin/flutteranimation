@@ -59,9 +59,16 @@ class HomeContent extends StatefulWidget {
 
 class _HomeContentState extends State<HomeContent> {
   int _current = 0;
+
+  // 1. Keep your local assets and simply add your network URLs to the same list
   final List<String> imgList = [
-    'images/ch.jpg', 'images/laut.jpg', 'images/river.jpg',
-    'images/yellow.jpg', 'images/kaz.jpg', 'images/stone.jpg', 'images/scot.jpg',
+    'images/ch.jpg',
+    'images/laut.jpg',
+    'images/river.jpg',
+    'images/yellow.jpg',
+    'https://www.journalofnomads.com/wp-content/uploads/2018/11/Big-Almaty-Lake-kazakhstan-hiking-almaty-1024x768.jpg',
+    'https://images.travelandleisureasia.com/wp-content/uploads/sites/7/2024/02/07134534/scotland.jpeg', // Added Network Image URL
+    'https://www.cathaypacific.com/content/dam/focal-point/cx/inspiration/2024/09/When_and_how_to_visit_10_spectacular_natural_wonders_of_China-Landscape_of_Zhangjiajie-aphotostory-Gettyimages-5.renditionimage.900.600.jpg', // Added Network Image URL
   ];
 
   @override
@@ -78,7 +85,10 @@ class _HomeContentState extends State<HomeContent> {
           ),
           items: imgList.map((path) => ClipRRect(
             borderRadius: BorderRadius.circular(15),
-            child: Image.asset(path, fit: BoxFit.cover, width: 1000),
+            // 2. Check if the path string starts with 'http' to choose the correct widget
+            child: path.startsWith('http')
+                ? Image.network(path, fit: BoxFit.cover, width: 1000)
+                : Image.asset(path, fit: BoxFit.cover, width: 1000),
           )).toList(),
         ),
         const SizedBox(height: 15),

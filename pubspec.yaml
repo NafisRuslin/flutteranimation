@@ -69,9 +69,6 @@ flutter:
     - images/laut.jpg
     - images/river.jpg
     - images/yellow.jpg
-    - images/kaz.jpg
-    - images/stone.jpg
-    - images/scot.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
