@@ -1,3 +1,11 @@
+plugins {
+    // These tell Gradle which tools are available for the whole project
+    id("com.android.application") version "8.11.1" apply false
+    id("org.jetbrains.kotlin.android") version "2.2.20" apply false
+    id("dev.flutter.flutter-gradle-plugin") apply false
+    id("com.google.gms.google-services") version "4.4.1" apply false // <--- THIS IS THE KEY
+}
+
 allprojects {
     repositories {
         google()

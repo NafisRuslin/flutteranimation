@@ -46,21 +46,21 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR-ANDROID-API-KEY',
-    appId: 'YOUR-ANDROID-APP-ID',
-    messagingSenderId: 'YOUR-SENDER-ID',
-    projectId: 'your-project-id',
-    databaseURL: 'https://your-project-id-default-rtdb.firebaseio.com',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyDsZdRCod6AEdCQf7j5tWBBJ1pxTEofr0Y',
+    appId: '1:79944709286:android:af25bddbdc30601370f067',
+    messagingSenderId: '79944709286',
+    projectId: 'flutteranimation-30cae',
+    databaseURL: 'https://flutteranimation-30cae-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'flutteranimation-30cae.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'YOUR-IOS-API-KEY',
-    appId: 'YOUR-IOS-APP-ID',
-    messagingSenderId: 'YOUR-SENDER-ID',
-    projectId: 'your-project-id',
-    databaseURL: 'https://your-project-id-default-rtdb.firebaseio.com',
-    storageBucket: 'your-project-id.appspot.com',
+    apiKey: 'AIzaSyBa7nuJ-rdexaGjsMv9SL2eUM2BntrDJ4c',
+    appId: '1:79944709286:ios:32b62ec708e9ea2f70f067',
+    messagingSenderId: '79944709286',
+    projectId: 'flutteranimation-30cae',
+    databaseURL: 'https://flutteranimation-30cae-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'flutteranimation-30cae.firebasestorage.app',
     iosBundleId: 'com.example.flutteranimation',
   );
 }
